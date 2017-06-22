@@ -1,5 +1,8 @@
 use_frameworks!
 
+source 'https://github.com/chaobj001/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
 target 'podTestLib01_Example' do
   pod 'podTestLib01', :path => '../'
 
@@ -7,5 +10,6 @@ target 'podTestLib01_Example' do
     inherit! :search_paths
 
     pod 'FBSnapshotTestCase'
+    pod 'podTestLib02'
   end
 end
